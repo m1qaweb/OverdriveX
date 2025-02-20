@@ -1,0 +1,72 @@
+{
+  "cars": [
+      {
+      "id": 1,
+      "name": "rimac_nevera",
+      "horsepower": 1914,
+      "top_speed": "412 km/h",
+      "price": "$2,400,000"
+    },
+    {
+      "id": 2,
+      "name": "maserati_mc20",
+      "horsepower": 630,
+      "top_speed": "325 km/h",
+      "price": "$212,000"
+    },
+    {
+      "id": 3,
+      "name": "pagani_utopia",
+      "horsepower": 852,
+      "top_speed": "349 km/h",
+      "price": "$2,190,000"
+    }
+  ],
+  "engines": [
+    {
+      "name": "V6",
+      "cylinders": 6,
+      "displacement": "2.5L – 4.0L",
+      "power_output": "250 – 400 HP",
+      "torque": "250 – 400 Nm",
+      "rpm_range": "6,000 – 7,500 RPM",
+      "fuel_efficiency": "8 – 12 km/L"
+    },
+    {
+      "name": "V8",
+      "cylinders": 8,
+      "displacement": "4.0L – 7.0L",
+      "power_output": "400 – 700 HP",
+      "torque": "500 – 800 Nm",
+      "rpm_range": "6,500 – 8,000 RPM",
+      "fuel_efficiency": "5 – 10 km/L"
+    },
+    {
+      "name": "V10",
+      "cylinders": 10,
+      "displacement": "5.0L – 8.4L",
+      "power_output": "500 – 800 HP",
+      "torque": "500 – 900 Nm",
+      "rpm_range": "7,000 – 9,000 RPM",
+      "fuel_efficiency": "4 – 8 km/L"
+    },
+    {
+      "name": "V12",
+      "cylinders": 12,
+      "displacement": "5.5L – 7.5L",
+      "power_output": "600 – 900 HP",
+      "torque": "600 – 1,000 Nm",
+      "rpm_range": "7,500 – 9,500 RPM",
+      "fuel_efficiency": "3 – 7 km/L"
+    },
+    {
+      "name": "V16",
+      "cylinders": 16,
+      "displacement": "8.0L – 12.3L",
+      "power_output": "1,000+ HP",
+      "torque": "1,200+ Nm",
+      "rpm_range": "6,000 – 8,000 RPM",
+      "fuel_efficiency": "2 – 5 km/L"
+    }
+  ]
+}

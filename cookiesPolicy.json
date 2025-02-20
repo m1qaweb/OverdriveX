@@ -1,0 +1,33 @@
+{
+  "last_updated": "Never, because we don’t care about your privacy.",
+  "welcome_message": "Welcome to OverdriveX.com! We’re so glad you’re here, and we’re even more excited to take all your personal information While you are looking at our beautiful car models and engines!",
+  "information_we_collect": {
+    "Your Name": "We’ll use it to pretend we know you.",
+    "Email Address": "So we can spam you with nonsense.",
+    "Phone Number": "Expect random calls at 3 a.m.",
+    "Credit Card Information": "Don’t worry, we’ll 'keep it safe'.",
+    "Your Location": "We already know where you live, but we’ll track you anyway."
+  },
+  "how_we_use_your_information": [
+    "Sell It: We’ll sell your information to anyone and everyone. Advertisers, scammers.",
+    "Spam You: Get ready for endless emails about things you never asked for.",
+    "Impersonate You: We have already taken out a loan in your name.",
+    "Improve Our Services: By 'improve,' we mean make it easier to take more of your data."
+  ],
+  "data_security": {
+    "Disclaimer": "If your data gets stolen, hacked, or leaked, that’s not our problem. You agreed to this, remember?"
+  },
+  "cookies": {
+    "Track You": "Across the internet, across the world, across dimensions.",
+    "Annoy You": "With pop-ups that say, 'Accept cookies?' even though you already did.",
+    "Warning": "If you don’t like cookies, too bad. They’re baked into the website."
+  },
+  "your_rights": {
+    "Access Your Data": "Sure, you can ask, but we’ll just send you a random spreadsheet full of nonsense.",
+    "Delete Your Data": "We’ll pretend to delete it, but it’ll still be on a server somewhere."
+  },
+
+  "contact_us": {
+    "Email": "OverdriveX@gmail.com (We won’t respond.)"
+  }
+}

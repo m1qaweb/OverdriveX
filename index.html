@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OverdriveX</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-logo">
+        <img src="/OverdriveX/assets/logo.svg" alt="Logo" />
+      </div>
+    </div>
+    <header class="navbar">
+      <div class="logo">
+        <img src="/OverdriveX/assets/logo.svg" alt="Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#vid">Home</a></li>
+          <li><a href="#scroll-slider">Car Models</a></li>
+          <li><a href="#engines">Engines</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#" class="sign-in" onclick="openModal('signIn')">Sign In</a>
+        <a href="#" class="sign-up" onclick="openModal('signUp')">Register</a>
+      </div>
+      <div class="user-profile" style="display: none"></div>
+      <div class="menu-icon" id="menuIcon"></div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+      <span class="close-menu" id="closeMenu">&times;</span>
+      <ul class="mobile-nav-links">
+        <li><a href="#vid">Home</a></li>
+        <li><a href="#scroll-slider">Car Models</a></li>
+        <li><a href="#engines">Engines</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <main>
+      <section id="vid">
+        <video autoplay loop muted playsinline>
+          <source src="/OverdriveX/assets/mainbg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section class="car-models">
+        <h1 class="car-models-title">CAR MODELS</h1>
+        <div id="scroll-slider">
+          <button id="prevBtn" class="carousel-btn prev">&lt;</button>
+          <div class="scroll-wrapper"></div>
+          <button id="nextBtn" class="carousel-btn next">&gt;</button>
+        </div>
+      </section>
+
+      <section id="engines">
+        <h2 class="section-title">Engines</h2>
+
+        <div class="engine-row">
+          <video
+            src="/OverdriveX/assets/V6.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="engine-text">Loading V6 specifications...</div>
+        </div>
+
+        <div class="engine-row reverse">
+          <div class="engine-text">Loading V8 specifications...</div>
+          <video
+            src="/OverdriveX/assets/V8.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+
+        <div class="engine-row">
+          <video
+            src="/OverdriveX/assets/V10.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="engine-text">Loading V10 specifications...</div>
+        </div>
+
+        <div class="engine-row reverse">
+          <div class="engine-text">Loading V12 specifications...</div>
+          <video
+            src="/OverdriveX/assets/V12.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+
+        <div class="engine-row">
+          <video
+            src="/OverdriveX/assets/V16.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="engine-text">Loading V16 specifications...</div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="authModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div id="signInForm">
+          <div class="modal-logo">
+            <img src="/OverdriveX/assets/logo.svg" alt="Logo" />
+          </div>
+          <input type="email" id="signInEmail" placeholder="Email" required />
+          <div class="password-container">
+            <input
+              type="password"
+              id="signInPassword"
+              placeholder="Password"
+              required
+            />
+            <img
+              id="toggleSignInPassword"
+              src="/OverdriveX/assets/closedeye.svg"
+              alt="Show Password"
+            />
+          </div>
+          <button onclick="validateSignIn()">Sign In</button>
+          <p class="switch-modal">
+            Don't have an account?
+            <a href="#" onclick="switchForm('signUp')">Register an Account</a>
+          </p>
+          <p id="signInError" class="error-msg"></p>
+        </div>
+
+        <div id="signUpForm" style="display: none">
+          <div class="modal-logo">
+            <img src="/OverdriveX/assets/logo.svg" alt="Logo" />
+          </div>
+          <input
+            type="text"
+            id="signUpUsername"
+            placeholder="Username"
+            required
+          />
+          <input type="email" id="signUpEmail" placeholder="Email" required />
+          <div class="password-container">
+            <input
+              type="password"
+              id="signUpPassword"
+              placeholder="Password"
+              required
+            />
+            <img
+              id="toggleSignUpPassword"
+              src="/OverdriveX/assets/closedeye.svg"
+              alt="Show Password"
+            />
+          </div>
+          <button onclick="validateSignUp()">Sign Up</button>
+          <p class="switch-modal">
+            Already have an account?
+            <a href="#" onclick="switchForm('signIn')">Sign In</a>
+          </p>
+          <p id="signUpError" class="error-msg"></p>
+        </div>
+      </div>
+    </div>
+    <div id="cookie-banner" class="cookie-banner">
+      <p>
+        We use cookies to improve your experience. By using our site, you agree
+        to our <a href="#" id="openPolicy">privacy policy</a>.
+      </p>
+      <button id="acceptCookies">Accept</button>
+    </div>
+
+    <div id="cookie-modal" class="cookie-modal">
+      <div class="cookie-modal-content">
+        <h2>Privacy Policy</h2>
+        <div class="cookie-modal-body"></div>
+        <button id="closeModal">Accept</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">OverdriveX</div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-bottom">© 2025 OverdriveX. All rights reserved.</div>
+      <div class="modal-logo">
+        <img src="/OverdriveX/assets/logo.svg" alt="Logo" />
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9cb0a7c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
