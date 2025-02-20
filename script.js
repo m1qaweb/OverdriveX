@@ -222,7 +222,7 @@ function updateAuthUI() {
           renderer: "svg",
           loop: true,
           autoplay: true,
-          path: "/OverdriveX/assets/user-icon.json",
+          path: "/assets/user-icon.json",
         });
       }
     });
@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/OverdriveX/assets/menu-icon.json",
+    path: "/assets/menu-icon.json",
   });
 
   let isMenuOpen = false;
@@ -440,10 +440,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="car-container">
               <div class="car-image">
                 <img
-                  src="/OverdriveX/assets/images/${car.name}.png"
+                  src="/assets/images/${car.name}.png"
                   width="700px"
                   alt="${car.name}"
-                  onerror="this.onerror=null; this.src='/OverdriveX/assets/images/placeholder.png';"
+                  onerror="this.onerror=null; this.src='/assets/images/placeholder.png';"
                 />
               </div>
               <div class="car-body">
